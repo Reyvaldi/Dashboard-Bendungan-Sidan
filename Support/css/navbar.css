@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.navbar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 6.5vh;
+    background-color: #4D5359;
+}
+
+#navbarNavAltMarkup {
+    padding-left: 90px;
+}
+
+.nav-link {
+    padding-left: 200px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo-tmr {
+    width: 70px;
+    margin-left: 20px;
+}
+
+.tes {
+    display: none;
+}
+
+.active {
+    display: inline;
+}
+
+.parellelogram {
+    width: 60vw;
+    height: 3vh;
+    border-left: 50px solid transparent;
+    border-bottom: 6.5vh solid #ffca29;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+.parellelogram span {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    position: absolute;
+    top: 1.5vh;
+    margin-left: -200px;
+    color: #364777;
+    font-weight: 700;
+    transform: scale(1, 1.5);
+}
+
+@media (max-width: 1493px) {
+    .parellelogram {
+        width: 56vw;
+    }
+
+    .parellelogram span {
+        font-size: 18px;
+        margin-left: -280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .parellelogram {
+        width: 45vw;
+    }
+
+    .parellelogram span {
+        width: 34vw;
+        font-size: 13px;
+        top: 2vh;
+        margin-left: -18vw;
+    }
+}
+
+@media (max-width: 1080px) {
+    .parellelogram {
+        border-left: 45px solid transparent;
+        width: 45vw;
+    }
+
+    .parellelogram span {
+        width: 35vw;
+        font-size: 12px;
+        top: 2vh;
+        margin-left: -18vw;
+    }
+
+    .logo {
+        margin-top: -1vh;
+        width: 200px;
+    }
+
+    .logo-tmr {
+        margin-top: -1vh;
+        width: 90px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 965px) {
+    .parellelogram {
+        border-left: 45px solid transparent;
+        width: 45vw;
+    }
+
+    .parellelogram span {
+        width: 35vw;
+        font-size: 12px;
+        top: 1vh;
+        margin-left: -18vw;
+    }
+
+}
+
+@media (max-width: 830px) {
+    .parellelogram {
+        border-left: 45px solid transparent;
+        width: 45vw;
+    }
+
+    .parellelogram span {
+        width: 35vw;
+        font-size: 11px;
+        top: 1vh;
+        margin-left: -18vw;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .logo-tmr {
+        width: 90px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .parellelogram {
+        border-left: 45px solid transparent;
+        width: 40vw;
+    }
+
+    .parellelogram span {
+        width: 35vw;
+        font-size: 11px;
+        top: 1vh;
+        margin-left: -18vw;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .logo-tmr {
+        width: 80px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 100px;
+    }
+
+    .parellelogram {
+        top: 44px;
+        border-left: 45px solid transparent;
+        border-bottom: 56px solid #ffca29;
+        width: 55vw;
+    }
+
+    .parellelogram span {
+        width: 40vw;
+        font-size: 10px;
+        top: 1vh;
+        margin-left: -20vw;
+    }
+
+    .navbar .container-fluid {
+        margin-top: -10px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-brand {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-top: 0px;
+        width: 150px;
+    }
+
+    .logo-tmr {
+        margin-top: 8px;
+        width: 90px;
+        margin-left: -10vw;
+    }
+}
+
+@media (max-width: 437px) {
+    .navbar {
+        height: 90px;
+    }
+
+    .parellelogram {
+        top: 44px;
+        border-left: 45px solid transparent;
+        border-bottom: 46px solid #ffca29;
+        width: 55vw;
+    }
+
+    .parellelogram span {
+        width: 35vw;
+        font-size: 7px;
+        top: 1.5vh;
+        margin-left: -18vw;
+    }
+
+    .navbar .container-fluid {
+        margin-top: -10px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-top: 0px;
+        width: 140px;
+    }
+
+    .logo-tmr {
+        margin-top: 1.5vh;
+        width: 70px;
+        margin-left: -8vw;
+    }
+}

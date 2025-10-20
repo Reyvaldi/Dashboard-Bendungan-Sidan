@@ -1,0 +1,669 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+[ni-control-id='2'] {
+  display: none;
+}
+
+.wrapper {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrap-img {
+  position: absolute;
+  top: 6.5vh;
+  left: 0;
+  width: 40vw;
+  height: 93.5vh;
+  border: 0;
+  display: none;
+  overflow-y: auto;
+  overflow: hidden;
+  background-color: #212830;
+}
+
+.img-content {
+  width: inherit;
+  display: none;
+}
+
+.wrap-sidebar {
+  position: absolute;
+  top: 6.5vh;
+  right: 0;
+  width: 60vw;
+  height: 93.5vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border: 0;
+  display: none;
+  text-align: center;
+  color: #ccccdc;
+  background-color: #181B1F;
+}
+
+.content-data {
+  width: 59vw;
+  height: inherit;
+}
+
+.content-info {
+  width: 60vw;
+  height: inherit;
+}
+
+.btnclose {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  color: #007BFF;
+}
+
+.fullscreen {
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  color: #007BFF;
+}
+
+.btnclosefullscreen {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+  right: 50px;
+  top: 20px;
+  color: #007BFF;
+  z-index: 9998;
+}
+
+.btndownload {
+  background-color: transparent;
+  border: 0;
+  padding: 4px 4px 4px 4px;
+  font-size: 15px;
+  position: absolute;
+  top: 200px;
+  right: 180px;
+  color: #000000;
+  background-color: #E3E6E8;
+  border-style: solid;
+  border: #000000;
+  border-radius: 2px;
+}
+
+.btndownload2 {
+  background-color: transparent;
+  border: 0;
+  padding: 4px 4px 4px 4px;
+  font-size: 15px;
+  position: absolute;
+  top: 10vh;
+  left: 42vw;
+  color: #000000;
+  background-color: #E3E6E8;
+  border-style: solid;
+  border: #000000;
+  border-radius: 2px;
+  z-index: 9998;
+}
+
+.wrapper-fullscreen {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  background-color: #007BFF;
+}
+
+.content-data-full {
+  animation: fadeEffect 1s;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content-data-full-rainfall {
+  animation: fadeEffect 1s;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.framedownload {
+  display: none;
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.framewrapper {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  background-color: #181B1F;
+  color: #d8d8df;
+  border-radius: 5px;
+  z-index: 9999;
+  padding: 0px;
+
+}
+
+.framewrapper .row .col-6 {
+  padding: 70px 40px 20px 40px;
+}
+
+.popup-title {
+  background-color: #009FF5;
+  color: #ffffff;
+  font-size: 18px;
+  width: 600px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  align-content: center;
+  padding-top: 5px;
+  position: absolute;
+  z-index: 9999;
+}
+
+.popup-download {
+  animation: fadeEffect 1s;
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9998;
+}
+
+.wrap-sidebar .menu {
+  margin-top: 20px;
+}
+
+.title {
+  margin-top: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tab {
+  border-bottom: 1px solid #4b4f55;
+  height: 35px;
+  padding-left: 10px;
+}
+
+.rightside-button {
+  border-bottom: 1px solid #4b4f55;
+  margin-left: -20px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab .tablinks {
+  height: 35px;
+  max-width: 110px;
+  min-width: 100px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: inherit;
+  float: left;
+  background-color: #181B1F;
+  color: #AAAAB8;
+  border: 1px solid #4b4f55;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 18px;
+  transition: 0.3s;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: -1px;
+}
+
+.tab .EM {
+  background-color: #FFCA29;
+  color: #000000;
+}
+
+.tab .tablinks#overview {
+  width: 110px;
+}
+
+/* Change background color of buttons on hover */
+.tab .tablinks:hover {
+  background-color: #111217;
+  color: #d8d8df;
+}
+
+.tab .tablinks.EM:hover {
+  background-color: #755800;
+  color: #d8d8df;
+}
+
+/* Create an active/current tablink class */
+.tab .tablinks.active {
+  background-color: #111217;
+  color: #d8d8df;
+  border-bottom: 0;
+  width: 120px;
+}
+
+.tab .tablinks.EM.active {
+  background-color: #755800;
+  color: #d8d8df;
+  border-bottom: 0;
+  width: 120px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 0;
+  animation: fadeEffect 1s;
+}
+
+#tabcontent {
+  height: auto;
+}
+
+.rightside-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding: 0 0 3px 0;
+}
+
+.btn-grouping {
+  display: none;
+  background-color: #181B1F;
+  color: #d8d8df;
+  font-size: 16px;
+  padding: 0px 10px 0px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-grouping:hover,
+.btn-group:focus {
+  background-color: #2B2D32;
+  border-bottom: solid 2px #F86C3A;
+}
+
+.group-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #181B1F;
+  color: #d8d8df;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  padding: 5px 10px 3px 10px;
+  border: none;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.dropbtn .fa-bars {
+  margin-right: 5px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #111217;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  border: 1px solid #4b4f55;
+  height: 29px;
+  margin-left: 5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  padding: 5px 0 5px 0;
+  border-radius: 3px;
+  background-color: #181B1F;
+  width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #d8d8df;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #313238;
+}
+
+/* button download */
+.btndownload3 {
+  position: relative;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  border: 1px solid #4b4f55;
+  height: 29px;
+  color: #d8d8df;
+  background-color: #3D71D9;
+  padding: 0px 10px;
+  text-decoration: none;
+  border: 0px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/* line */
+.css-1uwurbo {
+  width: 1px;
+  background-color: #4b4f55;
+  border-radius: 1px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* button time range */
+.timerange-btn {
+  min-width: 120px;
+  background-color: #181B1F;
+  color: #d8d8df;
+  font-family: "Inter", sans-serif;
+  padding: 5px 10px 3px 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.timerange-btn:hover,
+.timerange-btn:focus {
+  background-color: #313238;
+}
+
+/* dropdown timerange */
+.dropdown-content-timerange {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 36px;
+  margin-left: -200px;
+  border-radius: 3px;
+  background-color: #181B1F;
+  border: 1px solid #4b4f55;
+  width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.dropdown-content-timerange .timerange-select {
+  width: 150px;
+  padding: 5px 0 5px 0;
+  border-left: 1px solid #4b4f55;
+}
+
+.dropdown-content-timerange .timerange-select a {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #d8d8df;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-timerange .timerange-select a:hover {
+  background-color: #313238;
+}
+
+.dropdown-content-timerange .absolute-timerange {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  padding: 10px 10px 0 10px;
+  text-align: left;
+  width: 250px;
+}
+
+.dropdown-content-timerange .absolute-timerange .btn-timerange {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+}
+
+.dropdown-content-timerange2 {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  padding: 5px 0 5px 0;
+  border-radius: 3px;
+  background-color: #181B1F;
+  width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.dropdown-content-timerange2 a {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #d8d8df;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.hover-timerange {
+  position: absolute;
+  display: none;
+  background-color: #181B1F;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #d8d8df;
+  width: 200px;
+  padding: 5px;
+  margin-top: 36px;
+  margin-left: -10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 998;
+
+}
+
+/* PopUP Download */
+.group-list-tags span {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #d8d8df;
+  margin-top: -1px;
+  margin-left: 3px;
+}
+
+.list-tag {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  background-color: #d8d8df;
+  color: #2B2D32;
+  padding: 5px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.list-tag:hover {
+  color: #d8d8df;
+  background-color: #2B2D32;
+  border: solid 1px #d8d8df;
+}
+
+.active-list {
+  color: #d8d8df;
+  background-color: #2B2D32;
+  border: solid 1px #d8d8df;
+}
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 1490px) {
+
+  .title {
+    font-size: 18px;
+  }
+
+  .wrap-sidebar {
+    position: absolute;
+    right: 0;
+    width: 55vw;
+    padding: 5px;
+    overflow-x: hidden;
+    border: 0;
+    display: none;
+    text-align: center;
+  }
+
+  .content-data {
+    width: 54vw;
+  }
+
+  .content-info {
+    width: 54vw;
+    height: inherit;
+  }
+
+  .btn-grouping {
+    display: block;
+  }
+
+  .group-btn {
+    display: none;
+    position: absolute;
+    margin-top: 35px;
+    background-color: #181B1F;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  .css-1uwurbo {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrap-map {
+    width: 100vw;
+  }
+
+  .wrap-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 93.5vh;
+    border: 0;
+    display: none;
+    overflow-y: auto;
+    overflow: hidden;
+    background-color: #212830;
+  }
+
+  .img-content {
+    width: auto;
+    display: none;
+    margin-left: 30vw;
+  }
+
+  .wrap-sidebar {
+    position: relative;
+    margin-top: -50px;
+    width: 100vw;
+  }
+
+  .content-data {
+    width: 100vw;
+  }
+
+  .content-info {
+    width: 100vw;
+    height: inherit;
+  }
+
+  .group-btn {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 0px;
+    background-color: #181B1F;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+    padding: 0px;
+    border-radius: 0px;
+  }
+
+  .btn-grouping {
+    display: none;
+  }
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.show-flex {
+  display: flex;
+}

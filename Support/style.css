@@ -1,0 +1,170 @@
+.tab-wind-direction {
+    --ni-border: 0px;
+}
+
+.indicator .jqx-container .jqx-input {
+    border-radius: 8px;
+    background-color: transparent;
+    --ni-border: 0;
+}
+
+.indicator .jqx-container .jqx-input {
+    border-radius: 8px;
+    background-color: transparent;
+    --ni-border: 0;
+}
+
+.wrapper-wind-direction {
+    height: 28px;
+    margin-top: -8px;
+    --ni-border-width: 0 0 1px 0;
+    --ni-border-style: solid;
+    border-radius: 0px 0px 0 5px;
+}
+
+.wrapper-wind-direction:hover {
+    --ni-background: #ececec
+}
+
+.wrapper-wind-speed {
+    height: 28px;
+    margin-top: -8px;
+    --ni-border-width: 0 0 1px 0;
+    --ni-border-style: solid;
+    border-radius: 0px 0px 5px 0;
+}
+
+.wrapper-wind-speed:hover {
+    --ni-background: #ececec
+}
+
+.wrapper-pressure {
+    height: 28px;
+    margin-top: -8px;
+    --ni-border-width: 0 0 1px 0;
+    --ni-border-style: solid;
+    border-radius: 0px 0 5px 5px;
+}
+
+[ni-control-id='18'] {
+    margin-left: -17px;
+}
+
+.wrapper-pressure:hover {
+    --ni-background: #ececec
+}
+
+.wrapper-temperatur {
+    height: 28px;
+    margin-top: -8px;
+    --ni-border-width: 0 0 1px 0;
+    --ni-border-style: solid;
+    border-radius: 0px 0px 0 5px;
+}
+
+.wrapper-temperatur:hover {
+    --ni-background: #ececec
+}
+
+.wrapper-pyranometer {
+    height: 28px;
+    margin-top: -8px;
+    --ni-border-width: 0 0 1px 0;
+    --ni-border-style: solid;
+    border-radius: 0px 0 0 5px;
+}
+
+[ni-control-id='41'] {
+    margin-left: -17px;
+}
+
+.wrapper-pyranometer:hover {
+    --ni-background: #ececec
+}
+
+.wrapper-humidity {
+    height: 28px;
+    margin-top: -8px;
+    --ni-border-width: 0 0 1px 0;
+    --ni-border-style: solid;
+    border-radius: 0px 0px 5px 0;
+}
+
+.wrapper-humidity:hover {
+    --ni-background: #ececec
+}
+
+.wrapper-rainfall {
+    height: 28px;
+    margin-top: -8px;
+    --ni-border-width: 0 0 1px 0;
+    --ni-border-style: solid;
+    border-radius: 0px 0 5px 0;
+}
+
+[ni-control-id='64'] {
+    margin-left: -17px;
+}
+
+.wrapper-rainfall:hover {
+    --ni-background: #ececec
+}
+
+
+
+jqx-gauge .jqx-needle {
+    fill: #ff0000;
+}
+
+jqx-gauge .jqx-needle-central-circle {
+    fill: #ff0000;
+}
+
+@media (max-width: 635px) {
+
+    /* Container row Graph */
+    [ni-control-id='109'],
+    [ni-control-id='127'],
+    [ni-control-id='145'],
+    [ni-control-id='163'] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*container row wrapper*/
+    [ni-control-id="195"] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    [ni-control-id="162"] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    [ni-control-id="129"] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper-wind-speed,
+    .wrapper-wind-direction,
+    .wrapper-temperatur,
+    .wrapper-humidity,
+    .wrapper-pyranometer,
+    .wrapper-rainfall {
+        border-radius: 0 0 5px 5px;
+    }
+
+    [ni-control-id='18'] {
+        margin-left: 0px;
+    }
+
+    [ni-control-id='41'] {
+        margin-left: 0px;
+    }
+
+    [ni-control-id='64'] {
+        margin-left: 0px;
+    }
+}

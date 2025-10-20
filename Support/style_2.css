@@ -1,0 +1,153 @@
+/*@media (min-width:2161px) {
+
+    .graph {
+        width: 1000px;
+    }
+}*/
+
+@media (max-width:2490px) {
+
+    [layout-pattern="graph"] {
+        max-width: 70%;
+    }
+}
+
+@media (max-width:1600px) {
+
+    [layout-pattern="graph"] {
+        max-width: 60%;
+    }
+}
+
+@media (max-width:1400px) {
+
+    [layout-pattern="graph"] {
+        max-width: 100%;
+    }
+}
+
+
+.tab-wind-direction {
+    --ni-border: 0px;
+}
+
+.indicator .jqx-container .jqx-input {
+    border-radius: 8px;
+    background-color: transparent;
+    --ni-border: 0;
+    color: white;
+}
+
+
+
+
+
+/*[ni-control-id="95"] {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}*/
+
+.icon {
+    opacity: 0.1;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px 2px #c4c4c4;
+    margin-top: 45px;
+}
+
+.card2 {
+    --ni-background: #ef1372e0;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px 2px #c4c4c4;
+    margin-top: 20px;
+}
+
+.card3 {
+    --ni-background: #1374eae0;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px 2px #c4c4c4;
+    margin-top: 20px;
+}
+
+.card4 {
+    --ni-background: #38bd76;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px 2px #c4c4c4;
+    margin-top: 20px;
+}
+
+.card5 {
+    --ni-background: #ffa435;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px 2px #c4c4c4;
+    margin-top: 20px;
+}
+
+.jqx-scale,
+.jqx-label {
+    --ni-foreground-color: white;
+    color: white;
+}
+
+jqx-gauge,
+jqx-gauge .jqx-tick {
+    stroke: white;
+}
+
+
+
+.background-blue {
+    --ni-background: #1374eae0;
+}
+
+
+jqx-gauge .jqx-needle {
+    fill: #ff0000;
+}
+
+jqx-gauge .jqx-needle-central-circle {
+    fill: #ff0000;
+}
+
+@media (max-width: 635px) {
+    [ni-control-id="4"] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    [ni-control-id="16"] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    [ni-control-id="39"] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper-pressure {
+        border-radius: 0 0 0 5px;
+    }
+
+    .wrapper-pyranometer {
+        border-radius: 0 0 0 5px;
+    }
+
+    .wrapper-rainfall {
+        border-radius: 0 0 0 5px;
+    }
+
+    [ni-control-id='18'] {
+        margin-left: 0px;
+    }
+
+    [ni-control-id='41'] {
+        margin-left: 0px;
+    }
+
+    [ni-control-id='64'] {
+        margin-left: 0px;
+    }
+}
